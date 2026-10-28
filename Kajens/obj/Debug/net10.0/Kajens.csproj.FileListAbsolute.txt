@@ -1,0 +1,14 @@
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\bin\Debug\net10.0\Kajens.exe
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\bin\Debug\net10.0\Kajens.deps.json
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\bin\Debug\net10.0\Kajens.runtimeconfig.json
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\bin\Debug\net10.0\Kajens.dll
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\bin\Debug\net10.0\Kajens.pdb
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.AssemblyInfoInputs.cache
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.AssemblyInfo.cs
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.csproj.CoreCompileInputs.cache
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.dll
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\refint\Kajens.dll
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.pdb
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.genruntimeconfig.cache
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\ref\Kajens.dll

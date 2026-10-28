@@ -1,0 +1,94 @@
+﻿
+using System.Globalization;
+
+namespace Kajens;
+
+public class Program
+{
+    
+    static void Main(string[] args)
+    {
+        Rentalsysteme systeme = new Rentalsysteme();
+
+        bool run = true;
+
+        while (run)
+        {
+            
+            Console.WriteLine("=== Welcome to Kajens Cykeluthyrning ===");
+            Console.WriteLine("1. Show vehicles");
+            Console.WriteLine("2. Register customer");
+            Console.WriteLine("3. Rent out");
+            Console.WriteLine("4. Return vehicles");
+            Console.WriteLine("5. Charge");
+            Console.WriteLine("6. Exit");
+
+            Console.Write("Enter: ");
+            int input = int.Parse(Console.ReadLine());
+
+            switch (input)
+            {
+                case 1:
+                    systeme.VisaFordon();
+                    break;
+
+                case 2:
+                    systeme.RegisterCustomer();
+                    break;
+
+                case 3:
+                    systeme.RentOutVehicles();
+                    break;
+
+                case 4:
+                    systeme.ReturnVehicle();
+                    break;
+
+                case 5:
+                    systeme.ChargeVehicle();
+                    break;
+
+                case 6:
+                    run = false;
+                    break;
+
+                default:
+                    Console.WriteLine("invalid input choose betwwen 1 and 6.");
+                    break;
+            }
+
+            Console.WriteLine();
+        }
+    }
+
+    // private static void VisaKvitto(Uthyrning uthyrning)
+    // {
+    //     Console.WriteLine();
+    //     Console.WriteLine("========== KVITTO ==========");
+    //     Console.WriteLine($"Kund: {uthyrning.Kund.Name}");
+
+    //     Console.WriteLine(
+    //         $"{uthyrning.Fordon.TheType()}, " +
+    //         $"{uthyrning.Hoursnbr} timmar à " +
+    //         $"{uthyrning.Fordon.Hourprice.ToString("N2", svenskKultur)} kr");
+
+    //     Console.WriteLine(
+    //         $"Grundpris: " +
+    //         $"{uthyrning.Basepris.ToString("N2", svenskKultur)} kr");
+
+    //     if (uthyrning.Kund.IsMember)
+    //     {
+    //         Console.WriteLine(
+    //             $"Medlemsrabatt (10 %): " +
+    //             $"-{uthyrning.Discount.ToString("N2", svenskKultur)} kr");
+    //     }
+
+    //     Console.WriteLine(
+    //         $"Att betala: " +
+    //         $"{uthyrning.Topay.ToString("N2", svenskKultur)} kr");
+
+    //     Console.WriteLine("============================");
+    // }
+
+
+}
