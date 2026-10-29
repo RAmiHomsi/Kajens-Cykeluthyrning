@@ -6,7 +6,7 @@ namespace Kajens;
 public class Program
 {
     
-    static void Main(string[] args)
+    static void Main()
     {
         Rentalsysteme systeme = new Rentalsysteme();
 
@@ -60,35 +60,5 @@ public class Program
             Console.WriteLine();
         }
     }
-
-    // private static void VisaKvitto(Uthyrning uthyrning)
-    // {
-    //     Console.WriteLine();
-    //     Console.WriteLine("========== KVITTO ==========");
-    //     Console.WriteLine($"Kund: {uthyrning.Kund.Name}");
-
-    //     Console.WriteLine(
-    //         $"{uthyrning.Fordon.TheType()}, " +
-    //         $"{uthyrning.Hoursnbr} timmar à " +
-    //         $"{uthyrning.Fordon.Hourprice.ToString("N2", svenskKultur)} kr");
-
-    //     Console.WriteLine(
-    //         $"Grundpris: " +
-    //         $"{uthyrning.Basepris.ToString("N2", svenskKultur)} kr");
-
-    //     if (uthyrning.Kund.IsMember)
-    //     {
-    //         Console.WriteLine(
-    //             $"Medlemsrabatt (10 %): " +
-    //             $"-{uthyrning.Discount.ToString("N2", svenskKultur)} kr");
-    //     }
-
-    //     Console.WriteLine(
-    //         $"Att betala: " +
-    //         $"{uthyrning.Topay.ToString("N2", svenskKultur)} kr");
-
-    //     Console.WriteLine("============================");
-    // }
-
 
 }

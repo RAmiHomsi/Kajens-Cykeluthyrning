@@ -22,7 +22,7 @@ public class Elbike : Vehicle
 
     public override string TheType()
     {
-        return "electric bicycle";
+        return "E-bike";
     }
 
     public void Charge()

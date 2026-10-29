@@ -12,3 +12,4 @@ C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\refint\Kajens.dl
 C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.pdb
 C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.genruntimeconfig.cache
 C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\ref\Kajens.dll
+C:\Users\Lesnar\Desktop\C sharp\Kajens\Kajens\obj\Debug\net10.0\Kajens.sourcelink.json

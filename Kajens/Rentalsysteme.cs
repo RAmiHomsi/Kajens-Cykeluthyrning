@@ -115,7 +115,7 @@ public class Rentalsysteme
             return;
         }
         
-        if (vehicle.TheType() == "electric bicycle")
+        if (vehicle.TheType() == "E-bike")
         {
             if (customer.Age < 18)
             {
@@ -180,7 +180,7 @@ public class Rentalsysteme
 
         Vehicle theVehicle = rental.Vehicle;
 
-        if (theVehicle.TheType() == "electric bicycle")
+        if (theVehicle.TheType() == "E-bike")
         {
             Elbike elbike = (Elbike)vehicle;
             elbike.Consumption(rental.Hoursnbr);
@@ -191,6 +191,30 @@ public class Rentalsysteme
 
         // Ta bort uthyrningen från listan.
          activeRentals.Remove(rental);
+
+         //kvitto
+        Console.WriteLine();
+        Console.WriteLine("========== KVITTO ==========");
+
+        Console.WriteLine(
+            $"{theVehicle.TheType()}, " +
+            $"{rental.Hoursnbr} hours * " +
+            $"{theVehicle.Hourprice} kr");
+
+        Console.WriteLine(
+            $"Basic Price: " +
+            $"{rental.Basepris} kr");
+
+        if (rental.Customer.IsMember)
+        {
+            Console.WriteLine(
+                $"Mebmer discount (10 %): " +
+                $"-{rental.Discount} kr");
+        }
+
+        Console.WriteLine(
+            $"To pay: " +
+            $"{rental.Topay} kr");
     }
 
     public void ChargeVehicle()
@@ -209,7 +233,7 @@ public class Rentalsysteme
         }
 
 
-        if (vehicle.TheType() != "electric bicycle")
+        if (vehicle.TheType() != "E-bike")
         {
             Console.WriteLine("Only electric bikes can be charged.");
             return;
@@ -217,7 +241,7 @@ public class Rentalsysteme
 
         if (vehicle.Rented)
         {
-            Console.WriteLine("A rented electric bicycle cannot be charged");
+            Console.WriteLine("A rented E-bike cannot be charged");
             return;
         }
 
@@ -232,7 +256,7 @@ public class Rentalsysteme
     public void VisaFordon()
     {
         Console.WriteLine();
-        Console.WriteLine("Nr  Type       Status    Battery");
+        Console.WriteLine("Nr  Type  Status  Battery");
 
         foreach (Vehicle vehicle in vehicles)
         {
@@ -241,14 +265,14 @@ public class Rentalsysteme
 
             string battery = "-";
 
-            if (vehicle.TheType() == "electric bicycle")
+            if (vehicle.TheType() == "E-bike")
             {
                 Elbike elbike = (Elbike)vehicle;
                 battery = $"{elbike.BatteryLevel} %";
             }
 
             Console.WriteLine(
-                    $"{vehicle.Number} {vehicle.TheType()} {status} {battery}");
+                    $"{vehicle.Number} {vehicle.TheType()} {status}     {battery}");
 
         }
     }
