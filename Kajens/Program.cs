@@ -29,7 +29,7 @@ public class Program
             switch (input)
             {
                 case 1:
-                    systeme.VisaFordon();
+                    systeme.ShowVehicles();
                     break;
 
                 case 2:

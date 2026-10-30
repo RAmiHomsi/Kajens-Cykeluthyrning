@@ -67,11 +67,6 @@ public class Rentalsysteme
     }
 
 
-    public Vehicle FindVehicle(int number)
-    {
-        return vehicles.FirstOrDefault(f => f.Number == number);
-    }
-
     public void RentOutVehicles()
     {
         if (customers.Count == 0)
@@ -253,7 +248,7 @@ public class Rentalsysteme
         return;
     }
 
-    public void VisaFordon()
+    public void ShowVehicles()
     {
         Console.WriteLine();
         Console.WriteLine("Nr  Type  Status  Battery");
