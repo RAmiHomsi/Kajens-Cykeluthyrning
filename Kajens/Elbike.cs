@@ -34,6 +34,6 @@ public class Elbike : Vehicle
     {
         int consume = hours * 10;
 
-        BatteryLevel -= consume;
+        BatteryLevel = Math.Max(0, BatteryLevel - consume);
     }
 }
